@@ -8,6 +8,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundMask;
     public Transform cam;
+    private Animator animator;
 
     public float speed = 6f;
     public float jump = 3f;
@@ -19,6 +20,12 @@ public class ThirdPersonMovement : MonoBehaviour
 
     private Vector3 velocity;
     private bool isGrounded;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -36,6 +43,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
         if (direction.magnitude >= 0.1f)
         {
+            animator.SetBool("isWalking", true);
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
@@ -43,10 +51,19 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            animator.SetBool("isJumping", true);
             velocity.y = Mathf.Sqrt(jump * -1f * gravity);
+        }
+        else
+        {
+            animator.SetBool("isJumping", false);
         }
 
         velocity.y += gravity * Time.deltaTime;

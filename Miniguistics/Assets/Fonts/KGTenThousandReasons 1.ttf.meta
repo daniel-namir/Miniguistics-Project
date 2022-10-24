@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4a260fbed0471f041afc3a1d55f3d40d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - KG Ten Thousand Reasons
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: acea5e8f2fa987c4ab52a198d6ff6cee, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

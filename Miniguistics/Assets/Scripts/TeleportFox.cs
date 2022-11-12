@@ -10,7 +10,7 @@ public class TeleportFox : MonoBehaviour
     
     public void SetPosition(GameObject warped)
     {
-       foxPos = warped.transform.position + new Vector3(1, 0, 1);
+       foxPos = warped.transform.position + new Vector3(5, 0, 5);
        player.GetComponent<CharacterController>().enabled = false;
        TransformFox();
     }

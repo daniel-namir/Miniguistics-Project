@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571343, b: 0.30692208, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 4884434}
   - component: {fileID: 4884436}
   - component: {fileID: 4884435}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2097,7 +2097,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444797371}
-  m_LocalRotation: {x: 0.10649046, y: 0.0000000042771338, z: -4.580787e-10, w: 0.9943138}
+  m_LocalRotation: {x: 0.10649046, y: -0.0000000042771364, z: 4.5807902e-10, w: 0.9943138}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2531,6 +2531,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CowBlW
       objectReference: {fileID: 0}
+    - target: {fileID: 1287295899898638, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287295899898638, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4054502789990554, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2626,8 +2634,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     words:
-    - Hello! My name is Cow. Press 'E' to continue.
-    - Good job!
+    - Welcome to Linguistics! My name is Benny the Cow. Press 'E' to continue.
+    - Today we are going to walk you through an immersive world that will teach you
+      the Korean alphabet and how to introduce oneself in Korean.
+    - To start your journey, walk around the map to explore the different game areas,
+      or simply choose one from the list in the next window to teleport into!
 --- !u!1 &703059141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3632,7 +3643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CollideAgainst:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 119
   m_IgnoreTag: Player
   m_TransparentLayers:
     serializedVersion: 2
@@ -6527,7 +6538,7 @@ MonoBehaviour:
   groundCheck: {fileID: 1934990830}
   groundMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 72
   cam: {fileID: 963194228}
   speed: 6
   jump: 3
@@ -7273,7 +7284,7 @@ GameObject:
   - component: {fileID: 1825985022}
   - component: {fileID: 1825985021}
   - component: {fileID: 1825985020}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: StartText
   m_TagString: Untagged
   m_Icon: {fileID: 0}

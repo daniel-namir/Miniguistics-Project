@@ -50,6 +50,7 @@ public class HandleDialogue : MonoBehaviour
 		if (Input.GetKeyDown("e"))
 		{
 			dialogueBox.SetActive(false);
+			FindObjectOfType<TriggerDialogue>().TeleportEnable();
 		}
 	}
 }

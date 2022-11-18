@@ -11,12 +11,15 @@ public class TriggerDialogue : MonoBehaviour
 
     public void DialogueTrigger()
     {
-        FindObjectOfType<HandleDialogue>().StartDialogue(dialogue);
+		Debug.Log(teleporter);
+		Debug.Log(areaButton);
+        FindObjectOfType<HandleDialogue>().StartDialogue(dialogue, teleporter, areaButton);
     }
     
-    public void TeleportEnable()
+    public void TeleportEnable(ParticleSystem teleport2, GameObject areaButton2)
     {
-     	teleporter.Play();
-		areaButton.SetActive(true);
+		Debug.Log(teleport2);
+     	teleport2.Play();
+		areaButton2.SetActive(true);
     }
 }

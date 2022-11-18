@@ -9,6 +9,8 @@ public class HandleDialogue : MonoBehaviour
 	public TextMeshProUGUI dialogueText;
     private Queue<string> words = new Queue<string>();
     public GameObject dialogueBox;
+    public ParticleSystem teleport2;
+    public GameObject areaButton2;
 
     public void Update()
     {
@@ -18,9 +20,11 @@ public class HandleDialogue : MonoBehaviour
 	    }
     }
 
-    public void StartDialogue (Dialogue dialogue)
-	{
-		words.Clear();
+    public void StartDialogue (Dialogue dialogue, ParticleSystem teleporter, GameObject areaButton)
+    {
+	    teleport2 = teleporter;
+	    areaButton2 = areaButton;
+	    words.Clear();
 		foreach (string sentence in dialogue.words)
 		{
 			words.Enqueue(sentence);
@@ -50,7 +54,7 @@ public class HandleDialogue : MonoBehaviour
 		if (Input.GetKeyDown("e"))
 		{
 			dialogueBox.SetActive(false);
-			FindObjectOfType<TriggerDialogue>().TeleportEnable();
+			FindObjectOfType<TriggerDialogue>().TeleportEnable(teleport2, areaButton2);
 		}
 	}
 }

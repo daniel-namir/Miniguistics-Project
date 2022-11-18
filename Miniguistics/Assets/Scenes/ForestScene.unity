@@ -1551,6 +1551,8 @@ MonoBehaviour:
     - Hello! My name is Han Solo the Chicken. I think I scrambled my words by accident.
       Could you help me reorganize them? Press 'E' to continue.
     - '*insert unscramble puzzle here*'
+  teleporter: {fileID: 1774536648}
+  areaButton: {fileID: 538815204}
 --- !u!1 &309935926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,7 +1836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 484780, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.21
+      value: -0.21002197
       objectReference: {fileID: 0}
     - target: {fileID: 484780, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1842,7 +1844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 484780, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.69
+      value: -2.6900024
       objectReference: {fileID: 0}
     - target: {fileID: 484780, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2233,6 +2235,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251cc662b529e6d4ca3fdd5ebd6c773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!198 &460250650 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5299920697753068120, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}
+  m_PrefabInstance: {fileID: 460250640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &538815204
 GameObject:
   m_ObjectHideFlags: 0
@@ -2675,7 +2682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     words:
-    - Welcome to Linguistics! My name is Benny the Cow. Press 'E' to continue.
+    - Welcome to Miniguistics! My name is Benny the Cow. Press 'E' to continue.
     - Today we are going to walk you through an immersive world that will teach you
       the Korean alphabet and how to introduce oneself in Korean.
     - To start your journey, walk around the map to explore the different game areas,
@@ -4397,6 +4404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 309935928}
   dialogueBox: {fileID: 404644502}
+  teleport2: {fileID: 0}
+  areaButton2: {fileID: 0}
 --- !u!1 &974955686
 GameObject:
   m_ObjectHideFlags: 0
@@ -4789,8 +4798,8 @@ MonoBehaviour:
     - Hello! My name is Porky the Pig. I will be here to help you learn the constants
       and vowels of Hangul. Press 'E' to continue.
     - '*insert minigame 2 here*'
-  teleporter: {fileID: 0}
-  areaButton: {fileID: 0}
+  teleporter: {fileID: 1125563052}
+  areaButton: {fileID: 224487798}
 --- !u!1001 &1055131421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5023,6 +5032,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251cc662b529e6d4ca3fdd5ebd6c773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!198 &1125563052 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5299920697753068120, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}
+  m_PrefabInstance: {fileID: 100770972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1135225580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5138,6 +5152,8 @@ MonoBehaviour:
     words:
     - Hello! My name is Donald the Duck. I have lost my phrase cubes (*insert Korean
       phrase, several phrases*). Could you help me find it? Press 'E' to continue.
+  teleporter: {fileID: 2125301352}
+  areaButton: {fileID: 162882425}
 --- !u!1001 &1179681357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6718,6 +6734,7 @@ MonoBehaviour:
   impacted: {fileID: 0}
   selectedDest: {fileID: 772140583}
   dialogueBox: {fileID: 404644502}
+  teleporter: {fileID: 0}
 --- !u!114 &1566014004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7027,6 +7044,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251cc662b529e6d4ca3fdd5ebd6c773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!198 &1774536648 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5299920697753068120, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}
+  m_PrefabInstance: {fileID: 1301756884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1774781633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7220,8 +7242,8 @@ MonoBehaviour:
     - Before continuing your journey, you will need to create a good foundation,
       which starts with learning Hangul - the Korean alphabet.
     - '*insert minigame 1 here*'
-  teleporter: {fileID: 0}
-  areaButton: {fileID: 0}
+  teleporter: {fileID: 460250650}
+  areaButton: {fileID: 1551671503}
 --- !u!1 &1803430605 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 116042, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}
@@ -7731,6 +7753,8 @@ MonoBehaviour:
     - Hello! My name is Daisy the Duck (You have met my brother Donald earlier).
       Press 'E' to continue.
     - '*insert minigame 5 here*'
+  teleporter: {fileID: 1991890941}
+  areaButton: {fileID: 916094257}
 --- !u!1 &1904288562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 116042, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}
@@ -7894,6 +7918,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251cc662b529e6d4ca3fdd5ebd6c773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!198 &1991890941 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5299920697753068120, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}
+  m_PrefabInstance: {fileID: 951363780}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1995728368
 GameObject:
   m_ObjectHideFlags: 0
@@ -8566,6 +8595,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251cc662b529e6d4ca3fdd5ebd6c773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!198 &2125301352 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5299920697753068120, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}
+  m_PrefabInstance: {fileID: 392562995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &543450653569822601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 91e4778cdfb185d4d9bfe81556dc4333, type: 3}

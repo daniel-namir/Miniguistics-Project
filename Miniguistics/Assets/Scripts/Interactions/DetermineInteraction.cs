@@ -8,12 +8,6 @@ public class DetermineInteraction : MonoBehaviour
     public GameObject selectedDest;
     public GameObject dialogueBox;
 	public ParticleSystem teleporter;
-    public GameObject stage0;
-	public GameObject stage1;
-	public GameObject stage2;
-	public GameObject stage3;
-	public GameObject stage4;
-	public GameObject stage5;
 
     void Start()
     {

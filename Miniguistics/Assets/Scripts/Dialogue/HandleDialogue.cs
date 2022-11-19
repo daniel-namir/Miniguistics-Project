@@ -11,6 +11,7 @@ public class HandleDialogue : MonoBehaviour
     public GameObject dialogueBox;
     public ParticleSystem teleport2;
     public GameObject areaButton2;
+    public GameObject openMinigame;
 
     public void Update()
     {
@@ -20,10 +21,11 @@ public class HandleDialogue : MonoBehaviour
 	    }
     }
 
-    public void StartDialogue (Dialogue dialogue, ParticleSystem teleporter, GameObject areaButton)
+    public void StartDialogue (Dialogue dialogue, ParticleSystem teleporter, GameObject areaButton, GameObject whichMinigame)
     {
 	    teleport2 = teleporter;
 	    areaButton2 = areaButton;
+		openMinigame = whichMinigame;
 	    words.Clear();
 		foreach (string sentence in dialogue.words)
 		{
@@ -55,6 +57,7 @@ public class HandleDialogue : MonoBehaviour
 		{
 			dialogueBox.SetActive(false);
 			FindObjectOfType<TriggerDialogue>().TeleportEnable(teleport2, areaButton2);
+			openMinigame.SetActive(true);
 		}
 	}
 }

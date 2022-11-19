@@ -8,10 +8,11 @@ public class TriggerDialogue : MonoBehaviour
     public Dialogue dialogue;
 	public ParticleSystem teleporter;
 	public GameObject areaButton;
-
+	public GameObject whichMinigame;
+    
     public void DialogueTrigger()
     {
-        FindObjectOfType<HandleDialogue>().StartDialogue(dialogue, teleporter, areaButton);
+        FindObjectOfType<HandleDialogue>().StartDialogue(dialogue, teleporter, areaButton, whichMinigame);
     }
     
     public void TeleportEnable(ParticleSystem teleport2, GameObject areaButton2)

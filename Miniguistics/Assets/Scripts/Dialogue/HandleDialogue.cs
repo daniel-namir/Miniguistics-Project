@@ -12,6 +12,7 @@ public class HandleDialogue : MonoBehaviour
     public ParticleSystem teleport2;
     public GameObject areaButton2;
     public GameObject openMinigame;
+    public AudioSource speech;
 
     public void Update()
     {
@@ -48,6 +49,7 @@ public class HandleDialogue : MonoBehaviour
 		dialogueText.text = "";
 		foreach (char letter in sentence.ToCharArray()){
 			dialogueText.text += letter;
+            speech.Play();
 			yield return null;
 		}
 	}

@@ -23,7 +23,7 @@ public class MenuMain : MonoBehaviour
     }
 
     public void goToMainScene(){
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("ForestScene");
     }
 
     public void quitGame(){

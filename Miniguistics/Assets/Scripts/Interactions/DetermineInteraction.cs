@@ -9,33 +9,17 @@ public class DetermineInteraction : MonoBehaviour
     public GameObject dialogueBox;
 	public ParticleSystem teleporter;
 
-    void Start()
-    {
-        
-    }
-    
-    void Update()
-    {
-        
-    }
-
     public void OnTriggerEnter(Collider col)
-        {
+    {
         impacted = col.gameObject;
         if (impacted.GetComponent<Teleporter>() != null && impacted.GetComponent<ParticleSystem>().isPlaying)
         {
-            Debug.Log(impacted);
             selectedDest.SetActive(true);
         }
         if (impacted.GetComponent<isAnimal>() != null)
         {
             impacted.GetComponent<TriggerDialogue>().DialogueTrigger();
-            Debug.Log(impacted);
             dialogueBox.SetActive(true);
-        }
-        if (impacted.GetComponent<IsMinigame>() != null)
-        {
-		   Debug.Log(impacted);
         }
     }
     

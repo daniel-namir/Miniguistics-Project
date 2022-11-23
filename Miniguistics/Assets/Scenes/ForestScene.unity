@@ -4052,7 +4052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -6, y: -15}
+  m_AnchoredPosition: {x: -50, y: -15}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &199503286
@@ -4138,7 +4138,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -4.7457123, w: 28.748634}
+  m_margin: {x: 0, y: 0, z: -103.64792, w: 28.748634}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -22040,7 +22040,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 494b7c64234b9c24ca7af48fb6923c9f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8db955e2bf341854e8e720c46ea3a8d4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.25
   m_Pitch: 1
@@ -31330,7 +31330,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305569622}
-  m_LocalRotation: {x: 0.14253858, y: -0.000000008515345, z: 0.0000000012262865, w: 0.98978925}
+  m_LocalRotation: {x: 0.14253858, y: 0.000000008515345, z: -0.0000000012262865, w: 0.98978925}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -32480,9 +32480,9 @@ MonoBehaviour:
     - Once you start, you can not leave. Once you answer a question, you can not
       go back. You must get at least 60% of the questions right to pass.
     - Begin.
-  teleporter: {fileID: 0}
-  areaButton: {fileID: 0}
-  whichMinigame: {fileID: 0}
+  teleporter: {fileID: 2125301352}
+  areaButton: {fileID: 916094257}
+  whichMinigame: {fileID: 823341129}
 --- !u!1 &1372659524
 GameObject:
   m_ObjectHideFlags: 0

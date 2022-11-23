@@ -7,6 +7,7 @@ public class MenuMain : MonoBehaviour
 {
     public GameObject creditCanvas;
     public GameObject mainCanvas;
+    public string toScene;
     //Activates this function once you press play. Only the First Frame (1).
     void Start(){
         backToMain();
@@ -23,7 +24,7 @@ public class MenuMain : MonoBehaviour
     }
 
     public void goToMainScene(){
-        SceneManager.LoadScene("ForestScene");
+        SceneManager.LoadScene(toScene);
     }
 
     public void quitGame(){

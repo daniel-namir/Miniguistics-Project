@@ -10367,7 +10367,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444797371}
-  m_LocalRotation: {x: 0.10649046, y: 0.0000000042771338, z: -4.580787e-10, w: 0.9943138}
+  m_LocalRotation: {x: 0.10649046, y: -0.0000000042771364, z: 4.5807902e-10, w: 0.9943138}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24237,8 +24237,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     words:
-    - Hello! My name is Porky the Pig. I will be here to help you learn the constants
-      and vowels of Hangul.
+    - Hello! My name is Porky the Pig. I will be here to help you learn how to make
+      syllables from Hangul characters.
     - '*insert minigame 2 here*'
   teleporter: {fileID: 1125563052}
   areaButton: {fileID: 224487798}
@@ -28188,7 +28188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1197881066

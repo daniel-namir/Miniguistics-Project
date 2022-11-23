@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &96614832
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2321,6 +2321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creditCanvas: {fileID: 781882296}
   mainCanvas: {fileID: 404267762}
+  toScene: ForestScene
 --- !u!4 &1568453980
 Transform:
   m_ObjectHideFlags: 0

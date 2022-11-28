@@ -32653,7 +32653,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305569622}
-  m_LocalRotation: {x: 0.14253858, y: -0.000000008515345, z: 0.0000000012262865, w: 0.98978925}
+  m_LocalRotation: {x: 0.14253858, y: 0.000000008515345, z: -0.0000000012262865, w: 0.98978925}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44034,7 +44034,7 @@ MonoBehaviour:
       which starts with learning Hangul - the Korean alphabet.
   teleporter: {fileID: 460250650}
   areaButton: {fileID: 1551671503}
-  whichMinigame: {fileID: 0}
+  whichMinigame: {fileID: 6194762429903112225}
 --- !u!1 &1803430605 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 116042, guid: 31030c34f220e9e4dbbee59a0041081e, type: 3}

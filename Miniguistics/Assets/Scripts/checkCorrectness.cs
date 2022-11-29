@@ -22,7 +22,7 @@ public class checkCorrectness : MonoBehaviour
         finalScore.text = endScore.ToString() + "%";
         if (score >= 3)
         {
-            pass.text = ("You passed! :)");
+            pass.text = ("Congratulations! You passed! :)");
         }
         else
         {

@@ -787,7 +787,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Anthony Nguyen,\nDaniel Namir, \nEric Abrams.\n...\nOh, and Dennis Nguyen"
+  m_text: "Anthony Nguyen,\nDaniel Namir, \nEric Abrams.\nand Dennis Nguyen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3362afd4877dd54409c66fe51e50e5e6, type: 2}
   m_sharedMaterial: {fileID: -1780902176826300280, guid: 3362afd4877dd54409c66fe51e50e5e6, type: 2}
@@ -1564,7 +1564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &781882297
 MonoBehaviour:
   m_ObjectHideFlags: 0

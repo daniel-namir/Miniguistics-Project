@@ -31,6 +31,7 @@ public class TimeRemaining : MonoBehaviour
             passScreen.SetActive(true);
             secondsRemaining = 30.0f;
             attemptsWrong = 0;
+            pairsLeft = 6;
         }
 
         if (attemptsWrong >= 2 || secondsRemaining <= 0)
@@ -39,6 +40,7 @@ public class TimeRemaining : MonoBehaviour
             failScreen.SetActive(true);
             secondsRemaining = 30.0f;
             attemptsWrong = 0;
+            pairsLeft = 6;
         }
     }
 
